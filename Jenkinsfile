@@ -4,7 +4,7 @@ pipeline {
 		
 		 stage ('Build') {
             steps {
-                sh 'mvn clean test -Dcucumber.filter.tags="@demoTwo"' 
+                bat'mvn clean test -Dcucumber.filter.tags="@demoTwo"' 
             }
 		
 	        }
