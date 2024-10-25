@@ -1,5 +1,5 @@
 pipeline {
-    agent any 
+   
     stages {
 		
 		 stage ('Build') {
@@ -8,5 +8,9 @@ pipeline {
             }
 		
 	        }
+	     stage ('Complete') {
+            steps {                
+		    echo 'job complete'
+            }       }
     }
 }
